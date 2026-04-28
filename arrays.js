@@ -50,5 +50,35 @@ console.log(num,f);
 let g = num.unshift(45);
 console.log(num,f);
 
-let h = num.delete(25);
-console.log(num, h)
+let num2 = [21, 31, 41, 51, 61];
+let num3 = [71, 81, 91, 101, 111, 121, 131, 141, 151];
+
+let h = delete num2[2];
+console.log(num2, h, "length of array after delete:", num2.length);
+
+let i = num.concat(num2, num3);
+console.log(i);
+
+let j = num3.sort();
+console.log("Sort:", j);
+
+let compareAscend = (a, b)=>{
+    return a - b;
+}
+num3.sort(compareAscend);
+console.log("Ascending order of the array: ", num3);
+
+let compareDescend = (a, b)=>{
+    return b - a;
+}
+num3.sort(compareDescend);
+console.log("Descending order of the array: ", num3);
+
+let k = num3.reverse();
+console.log("Reverse:", k);
+
+let m = num3.slice(1, 4);
+console.log("Slice:", m);
+
+let n = num3.splice(1, 2, 200, 300);
+console.log("Splice:", num3); 
