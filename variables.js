@@ -22,3 +22,7 @@ console.log(c);
 // const is used to declare a constant variable. It cannot be reassigned.
 // const are not hoisted.
 // It is also block scoped.
+
+//hoisting: it is a mechanism in javascript where variables and functions are moved to the top of their scope before the code is executed. 
+// This means that you can use a variable or function before it is declared in the code. 
+// However, only var variables are hoisted, let and const are not hoisted. because they are not initialized at the time of declaration.
