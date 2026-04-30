@@ -38,3 +38,54 @@ let newNum3 = num3.reduceRight((h1, h2) =>{
     return h1 + h2;
 })
 console.log(newNum3);
+
+/*
+Write a JavaScript brogram to generate a random number and store it in a variable.
+The program then takes an inbut from the user to tell them whether the guess was 
+correct, greater or lesser than the original number.
+*/
+
+
+
+let a = 0;
+console.log(Math.floor(Math.random(a)));
+
+let b = prompt("Enther your guessed number: ")
+
+if (b == a){
+    alert("Your guessed number is correct.");
+}
+else if (b > a){
+    alert("your guessed number is greater than randon nuumber.");
+}
+else if (b < a){
+    alert("your guessed number is less than randon nuumber.");
+}
+else{
+    alert("Your number is not correct.");
+}
+
+console.log("Then corect number is: " + a)
+
+
+
+// Generate a random number between 1 and 100
+let randomNumber = Math.floor(Math.random() * 100) + 1;
+
+// Take user input
+let userGuess = prompt("Guess a number between 1 and 100:");
+userGuess = Number(userGuess);
+
+// Check the guess
+if (userGuess === randomNumber) {
+    alert("Correct! You guessed the number.");
+} else if (userGuess > randomNumber) {
+    alert("Your guess is greater than the number.");
+} else if (userGuess < randomNumber) {
+    alert("Your guess is less than the number.");
+} else {
+    alert("Invalid input. Please enter a number.");
+}
+
+// (Optional) reveal the number
+console.log("The correct number was: " + randomNumber);
